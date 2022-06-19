@@ -16,7 +16,7 @@
 
 ### Installing
 1. 開啟終端機(Terminal)，clone 此專案至本機電腦
-```git clone ```
+```git clone https://github.com/youjheng/Restaurant-List.git```
 2. cd 到存放專案本機位置並執行：
 ```cd Restaurant List```
 3. 安裝 npm 套件：
