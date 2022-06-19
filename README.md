@@ -24,7 +24,7 @@ git clone https://github.com/youjheng/Restaurant-List.git
 2. cd 到存放專案本機位置並執行：
 
 ```
-cd Restaurant List
+cd Restaurant-List
 ```
 
 3. 安裝 npm 套件：
