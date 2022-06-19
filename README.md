@@ -16,13 +16,33 @@
 
 ### Installing
 1. 開啟終端機(Terminal)，clone 此專案至本機電腦
-```git clone https://github.com/youjheng/Restaurant-List.git```
+
+```
+git clone https://github.com/youjheng/Restaurant-List.git
+```
+
 2. cd 到存放專案本機位置並執行：
-```cd Restaurant List```
+
+```
+cd Restaurant List
+```
+
 3. 安裝 npm 套件：
-```npm install```
+
+```
+npm install
+```
+
 4. 安裝 nodemon 套件
-```npm i nodemon```
+
+```
+npm i nodemon
+```
+
 5. 啟動伺服器
-```npm run dev```
+
+```
+npm run dev
+```
+
 6. 在瀏覽器輸入 http://localhost:3000 ，瀏覽網頁
