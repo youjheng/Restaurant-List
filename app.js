@@ -36,11 +36,16 @@ app.get('/', (req, res) => {
 
 app.get('/search', (req, res) => {
   const keyword = req.query.keyword
-  const restaurants = Restaurant.results.filter(restaurant => {
-    return restaurant.name.toLowerCase().includes(keyword.toLowerCase()) || 
-      restaurant.category.toLowerCase().includes(keyword.toLowerCase())
-  })
-  res.render('index', { restaurants, keyword })
+  return Restaurant.find()
+    .lean()
+    .then(Restaurant => {
+      const restaurants = Restaurant.filter(data => {
+        return data.name.toLowerCase().includes(keyword.toLowerCase()) ||
+        data.category.toLowerCase().includes(keyword.toLowerCase())
+      })
+      res.render('index', { restaurants, keyword })
+    })
+    .catch(error => console.log(error))
 })
 
 app.get('/restaurants/new', (req, res) => {
