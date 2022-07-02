@@ -41,9 +41,13 @@
               </span>
         
             </div>
-            <div class="d-flex justify-content-end">
+            <hr>
+            <div class="d-flex justify-content-end m-2">
               <a class="btn btn-outline-success" href="/restaurants/{{ this._id }}/edit">修改</a>
               <a class="btn btn-outline-secondary" href="/restaurants/{{ this._id }}">資訊</a>
+              <form action="/restaurants/{{ this._id }}/delete" method="POST" style="display: inline;">
+                <button class="btn btn-danger" type="submit">刪除</button>
+              </form>
             </div>
           </div>
         </a>
