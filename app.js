@@ -1,23 +1,25 @@
 // require packages
 const express = require('express')
-const mongoose = require('mongoose')
+// const mongoose = require('mongoose')
 const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 
 const routes = require('./routes')
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+require('./config/mongoose')
 
-const db = mongoose.connection
+// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
 
-db.on('error', () => {
-  console.log('mongodb error!')
-})
+// const db = mongoose.connection
 
-db.once('open', () => {
-  console.log('mongodb connected!')
-})
+// db.on('error', () => {
+//   console.log('mongodb error!')
+// })
+
+// db.once('open', () => {
+//   console.log('mongodb connected!')
+// })
 
 const app = express()
 const port = 3000
