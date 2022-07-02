@@ -41,7 +41,7 @@
     <div class="d-flex justify-content-end col-12 col-md-10 mx-auto m-3">
       <a href="/restaurants/{{ restaurant._id }}/edit" class="btn btn-outline-success btn-back">修改</a>
       <a href="/" class="btn btn-outline-secondary btn-back">返回</a>
-      <form action="/restaurants/{{ restaurant._id }}/delete" method="POST" style="display: inline;">
+      <form action="/restaurants/{{ restaurant._id }}?_method=DELETE" method="POST" style="display: inline;">
         <button class="btn btn-danger" type="submit">刪除</button>
       </form>
     </div>
