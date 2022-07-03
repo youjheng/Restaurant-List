@@ -4,10 +4,11 @@ const router = express.Router()
 const Restaurant = require('../../models/restaurant')
 
 router.get('/', (req, res) => {
+  const sorting = req.query.sorting
   Restaurant.find()
     .lean()
-    .sort({ _id: 'asc' })
-    .then(restaurants => res.render('index', { restaurants }))
+    .sort({ name: sorting })
+    .then(restaurants => res.render('index', { restaurants, sorting }))
     .catch(error => console.log(error))
 })
 
