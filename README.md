@@ -19,6 +19,7 @@
 * MongoDB
 * mongoose@5.9.7
 * body-parser@1.20.0
+* method-override@3.0.0
 
 ### Installing
 1. 開啟終端機(Terminal)，clone 此專案至本機電腦
@@ -45,10 +46,20 @@ npm install
 npm i nodemon
 ```
 
-5. 啟動伺服器
+5. 設定環境變數連線 MongoDB
+```
+MONGODB_URI=Your MongoDB connection string
+```
+
+6. 載入種子資料
+```
+npm run seed
+```
+
+7. 啟動伺服器
 
 ```
 npm run dev
 ```
 
-6. 在瀏覽器輸入 http://localhost:3000 ，瀏覽網頁
+8. 在瀏覽器輸入 http://localhost:3000 ，瀏覽網頁
