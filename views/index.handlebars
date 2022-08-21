@@ -25,6 +25,7 @@
           </div>
         </div>
       </form>
+      <a href="/restaurants/new"><button class="btn btn-major">新增餐廳</button></a>
     </div>
   </div>
 </div>
@@ -55,10 +56,10 @@
             </div>
             <hr>
             <div class="d-flex justify-content-end m-2">
-              <a class="btn btn-outline-success" href="/restaurants/{{ this._id }}/edit">修改</a>
-              <a class="btn btn-outline-secondary" href="/restaurants/{{ this._id }}">資訊</a>
+              <a class="btn btn-major m-1" href="/restaurants/{{ this._id }}/edit">修改</a>
+              <a class="btn btn-major m-1" href="/restaurants/{{ this._id }}">資訊</a>
               <form action="/restaurants/{{ this._id }}?_method=DELETE" method="POST" style="display: inline;">
-                <button class="btn btn-danger" type="submit">刪除</button>
+                <button class="btn btn-outline-danger m-1" type="submit">刪除</button>
               </form>
             </div>
           </div>

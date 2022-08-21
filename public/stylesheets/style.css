@@ -49,6 +49,11 @@ a {
   color: white;
 }
 
+.btn-brand {
+  background-color: #4592af;
+  color: white;
+}
+
 .form-control:focus {
   box-shadow: none;
   border-color: #ced4da;
