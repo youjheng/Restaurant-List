@@ -14,8 +14,9 @@ router.get('/', (req, res) => {
 })
 
 router.get('/search', (req, res) => {
+  const userId = req.user._id
   const keyword = req.query.keyword
-  return Restaurant.find()
+  return Restaurant.find({ userId })
     .lean()
     .then(Restaurant => {
       const restaurants = Restaurant.filter(data => {

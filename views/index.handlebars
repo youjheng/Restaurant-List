@@ -3,8 +3,8 @@
   <div class="search-bar-outer">
     <div class="search-bar-inner row justify-content-around">
       <form action="/search">
-        <h4 class="mb-2">尋找餐廳：</h4>
-        <div class="input-group">
+        <div class="input-group m-2">
+          <h4>尋找餐廳：</h4>
           <input type="text" name="keyword" class="form-control" placeholder="輸入餐廳、分類" aria-label="Restaurant Name..."
             value="{{keyword}}" aria-describedby="search-button">
           <div class="input-group-append">
@@ -13,8 +13,8 @@
         </div>
       </form>
       <form action="/">
-        <h4 class="mb-2">排序餐廳：</h4>
-        <div class="input-group">
+        <div class="input-group m-2">
+          <h4>排序餐廳：</h4>
           <select class="form-control" aria-label="select" name="sorting" value="{{sorting}}">
             <option>請選擇排序方式</option>
             <option value="asc">依名稱A到Z</option>
@@ -25,7 +25,7 @@
           </div>
         </div>
       </form>
-      <a href="/restaurants/new"><button class="btn btn-major">新增餐廳</button></a>
+      <a href="/restaurants/new"><button class="btn btn-major m-2">新增餐廳</button></a>
     </div>
   </div>
 </div>
